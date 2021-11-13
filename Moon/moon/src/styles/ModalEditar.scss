@@ -1,0 +1,102 @@
+.modal{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  z-index: 10000;
+  padding: 2rem calc(4rem + 15px) 2rem 4rem;
+  
+  button{
+    border: none;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0.6rem 2rem 0.6rem 2rem;
+    background-color: #008F98;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    border-radius: 10rem;
+    cursor: pointer;
+    img{
+      margin-right: 0.3rem;
+    }
+  }
+  main{
+    overflow-y: scroll;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 50%;
+    background-color: #ffffff;
+    
+    p{
+      font-size: 18px;
+        color: #b1b1b1;
+    }
+    span{
+      border-bottom: 1px solid #f7f5f4;
+      padding-bottom: 0.2rem;
+      margin-bottom: 1rem;
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+
+      p{
+        font-size: 18px;
+        color: #b1b1b1;
+      }
+    }
+    aside{
+      border-bottom: 1px solid #f7f5f4;
+      padding-bottom: 0.2rem;
+      margin-bottom: 1rem;
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+
+      p{
+        font-size: 18px;
+        color: #b1b1b1;
+      }
+    }
+
+  }
+}
+.inputRadio{
+  display: flex;
+  margin-left: -0.5rem;
+  p{
+    margin-right: 0.2rem;
+    margin-left: 0.2rem;
+    
+  }
+}
+@media (max-width: 40rem) {
+  .modal{   
+    width: 120%;
+    margin-left: -10%;
+    main{
+      overflow-y: scroll;
+      align-items: center;
+      width: 120%;
+      
+    }
+    span{
+      flex-direction: column;
+    }
+    button{
+      padding: 10px;
+    }
+  }
+}

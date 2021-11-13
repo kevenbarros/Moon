@@ -1,0 +1,181 @@
+.conteinerMain {
+  width: 100%;
+
+  .flexGrafico {
+    margin-top: 2rem;
+    display: grid;
+
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    .grid-div {
+      margin: 0rem 1rem 2rem 1rem;
+
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      section {
+        ul {
+          list-style: none; /* Remove default bullets */
+        }
+      }
+    }
+  }
+}
+.asideGraficoTorre {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.aside-grafico {
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+}
+.alimentoValores {
+  margin-bottom: 10px;
+}
+.alimento {
+  margin-bottom: 10px;
+}
+.alimento::before {
+  content: '';
+  width: 0.8rem;
+  height: 0.8rem;
+  background: tomato;
+  display: inline-block;
+  border-radius: 1rem;
+  margin-right: 1rem;
+}
+.lazerValores {
+  margin-bottom: 10px;
+}
+.lazer {
+  margin-bottom: 10px;
+}
+.lazer::before {
+  content: '';
+  width: 0.8rem;
+  height: 0.8rem;
+  background: orange;
+  display: inline-block;
+  border-radius: 1rem;
+  margin-right: 1rem;
+}
+.outrosValores {
+  margin-bottom: 10px;
+}
+.outros {
+  margin-bottom: 10px;
+}
+.outros::before {
+  content: '';
+  width: 0.8rem;
+  height: 0.8rem;
+  background: gold;
+  display: inline-block;
+  border-radius: 1rem;
+  margin-right: 1rem;
+}
+.roupasValores {
+  margin-bottom: 10px;
+}
+.roupas {
+  margin-bottom: 10px;
+}
+.roupas::before {
+  content: '';
+  width: 0.8rem;
+  height: 0.8rem;
+  background: cyan;
+  display: inline-block;
+  border-radius: 1rem;
+  margin-right: 1rem;
+}
+.contafixaValores {
+  margin-bottom: 10px;
+}
+.contafixa {
+  margin-bottom: 10px;
+}
+.contafixa::before {
+  content: '';
+  width: 0.8rem;
+  height: 0.8rem;
+  background: green;
+  display: inline-block;
+  border-radius: 1rem;
+  margin-right: 1rem;
+}
+.eletrodoméstico {
+  margin-bottom: 10px;
+}
+.eletrodoméstico::before {
+  content: '';
+  width: 0.8rem;
+  height: 0.8rem;
+  background: #6a42ce;
+  display: inline-block;
+  border-radius: 1rem;
+  margin-right: 1rem;
+}
+.rendaGrafico {
+  font-size: 28px;
+  color: #50b77b;
+  font-weight: 500;
+}
+.contaGrafico {
+  margin-top: 25px;
+  font-size: 28px;
+  color: #f35050;
+  font-weight: 500;
+}
+.descricao {
+  color: #b1b1b8;
+  font-size: 16px;
+}
+.valores {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  .listaDeValores {
+    color: #b1b1b8;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.restanteGrafico {
+  margin-top: 25px;
+  font-size: 28px;
+  color: #008f98;
+  font-weight: 500;
+}
+.negativo {
+  color: #f35050;
+}
+
+@media (max-width: 40rem) {
+  .conteinerMain {
+    .flexGrafico {
+      display: flex;
+      flex-direction: column;
+      .grid-div {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  .conteinerGrafico2 {
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

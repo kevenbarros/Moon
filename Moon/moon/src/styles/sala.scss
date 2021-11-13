@@ -1,0 +1,87 @@
+
+
+.content-head{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 40px 0.5rem 40px;
+  align-items: center;
+  border-bottom: 2px solid #E9E9E9;
+
+  >img{
+    max-width: 40px;
+  }
+}
+.copybutton{
+    margin-right: 1rem;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    border-radius: 0.2rem;
+    height: 40px;
+    width: 40px;
+    border: 1px solid transparent;
+    transition: 1s;
+    >svg{
+      fill: #333;
+    }
+}
+.copybutton:focus{
+  background-color: white;
+  box-shadow: 0 0 0 3px #eee;
+  border-color: #333;
+  outline: none;
+}
+
+.menu{
+  display: flex;
+  grid-template-columns: repeat(4,1fr);
+  gap: 2rem;
+  
+  align-items: center;
+  .button{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    border-radius: 0.2rem;
+    height: 40px;
+    width: 40px;
+    border: 1px solid transparent;
+    transition: 1s;
+  }
+  .button:hover{
+    background-color: white;
+    box-shadow: 0 0 0 3px #eee;
+    border-color: #333;
+    outline: none;
+  }
+  .button:focus{
+    background-color: white;
+    box-shadow: 0 0 0 3px #eee;
+    border-color: #333;
+    outline: none;
+  }
+}
+.conteiner-button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+
+@media (max-width: 40rem) {
+  .menu{
+    display: grid;
+    gap: 0.1rem;
+    align-items: center;
+  }
+}

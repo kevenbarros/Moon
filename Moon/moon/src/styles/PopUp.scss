@@ -1,0 +1,38 @@
+.divFundo {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  padding: 2rem calc(4rem + 15px) 2rem 4rem;
+
+  main {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 40%;
+    height: 40%;
+    background-color: #ffffff;
+    h2 {
+      margin: 20px 0 20px 0;
+    }
+    img {
+      min-width: 130px;
+    }
+  }
+}
+
+@media (max-width: 40rem) {
+  .divFundo {
+    main {
+      width: 90%;
+    }
+  }
+}

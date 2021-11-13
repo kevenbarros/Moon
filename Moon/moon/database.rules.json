@@ -1,0 +1,21 @@
+{
+  "rules": {
+    "sala": {
+      ".read": false,
+      ".write": "auth != null",
+      "$salaId": {
+        ".read": true,
+        ".write": "auth != null && (!data.exists() || data.child('autor').val() == auth.id)",
+        "contasF": {
+          ".read": true,
+          ".write": "auth != null && (!data.exists() || data.child('autor').val() == auth.id)"
+        },
+        "contasNF": {
+					".read": true,
+          ".write": "auth != null && (!data.exists() || data.child('autor').val() == auth.id)"
+        }
+      }
+      
+    }
+  }
+}
