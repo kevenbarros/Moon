@@ -84,6 +84,7 @@ function Cadastrar() {
             <h2>{user?.nome}</h2>
             <div className="separator"> - - - - </div>
             <form onSubmit={handleRoom}>
+              <input type="text" id="meu-input" />
               <Input
                 className="input"
                 placeholder="R$0.00"
@@ -107,6 +108,7 @@ function Cadastrar() {
           </div>
         </main>
       </div>
+      <script src="https://github.com/codermarcos/simple-mask-money/releases/download/v3.0.0/simple-mask-money.js"></script>
     </>
   );
 }

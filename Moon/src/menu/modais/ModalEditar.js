@@ -49,7 +49,6 @@ function ModalEditar({ setModal, id, RoomId, arrayConta }) {
   //setando datas
   let data = new Date(dataInicio.value);
   let finalData = new Date(dataInicio.value);
-  let caminhoteste = Number(RoomId);
 
   //funçoes de ativar popup
   async function ativarPopUp() {
@@ -85,13 +84,16 @@ function ModalEditar({ setModal, id, RoomId, arrayConta }) {
       return;
     }
     //verifica se a conta parcelada foi criada nesse mes e não estava programada para receber no mes que foi cadastrado
-    if (arrayConta.pagarMesmoMes == false && checkedMes == true) {
+    if (
+      arrayConta.pagarMesmoMes == false &&
+      data.getUTCMonth() == mes.getUTCMonth() &&
+      checkedMes == true
+    ) {
       ativarPopUpError();
       return;
     }
     //caso a pessoa não esteja autenticada não permite, criar seta erro
     if (!user) {
-      throw new Error('you must be logged in');
       ativarPopUpError();
     }
 

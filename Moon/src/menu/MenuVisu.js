@@ -50,7 +50,7 @@ function Sala() {
     if (user) {
       console.log(user?.nome);
     } else {
-      console.log('nao existe');
+      //console.log('nao existe');
     }
   }
   //função que muda o stado de set modal abrindo assim o modal de visualização
@@ -279,3 +279,4 @@ function Sala() {
 }
 
 export default Sala;
+console.log();
